@@ -141,6 +141,10 @@ nav {
     margin-top: 0px;
 }
 
+.profile a {
+    margin-top: 10px;
+}
+
 .profile-location {
     font-size: 13px;
     color: #888;
