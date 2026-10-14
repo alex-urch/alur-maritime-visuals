@@ -120,9 +120,16 @@ nav {
     box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
 }
 
+.profile-top {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    gap: 24px;
+}
+
 .profile-photo {
-    width: 100px;
-    height: 220px;
+    width: 120px;
+    height: 300px;
     border-radius: 0%;
     object-fit: cover;
     flex-shrink: 0;
@@ -130,6 +137,12 @@ nav {
 
 .profile-text {
     flex: 1;
+    text-align: center;
+}
+
+.aboutprofile-text {
+    flex: 1;
+    text-align: left;
 }
 
 .profile-text h1 {
@@ -147,10 +160,6 @@ nav {
     margin-top: 0px;
 }
 
-.profile a {
-    margin-top: 10px;
-}
-
 .profile-location {
     font-size: 13px;
     color: #888;
@@ -165,21 +174,32 @@ nav {
 
 .profile-cta {
     display: inline-block;
+    align-self: flex-start;
     padding: 8px 18px;
     background: #768194;
     color: #fff;
     border-radius: 5px;
     font-size: 13px;
+    margin-top: 20px;
 }
 
 .profile-cta:hover {
     background: #5d6778;
 }
 
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-stacked {
+    flex-direction: row;
+    text-align: left;
+    gap: 10px;
+}
+
 @media (max-width: 600px) {
     .profile {
-        flex-direction: column-reverse;
-        text-align: center;
         margin: 40px 16px;
     }
 }
