@@ -181,7 +181,8 @@ nav {
 
 .profile-text h1 {
     font-size: 26px;
-    font-family: "Neuzeit Grotesk";
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-weight: 700;
     margin-bottom: 0px;
 }
 
