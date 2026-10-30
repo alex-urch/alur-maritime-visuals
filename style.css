@@ -154,6 +154,31 @@ nav {
     text-align: left;
 }
 
+.aboutprofile-text h1 {
+    font-size: 26px;
+    font-family: "Neuzeit Grotesk";
+    margin-bottom: 0px;
+}
+
+.aboutprofile-text h2 {
+    font-size: 16px;
+    color: #768194;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutprofile-text p {
+    margin-top: 0px;
+}
+
+.aboutprofile-text h2 {
+    margin-bottom: 30px;
+}
+
+.aboutprofile-text p {
+    margin-bottom: 10px;
+}
+
 .profile-text h1 {
     font-size: 26px;
     font-family: "Neuzeit Grotesk";
@@ -171,9 +196,10 @@ nav {
     margin-top: 0px;
 }
 
-.profile-bio h2{
+.profile-bio h2 {
     margin-bottom: 30px;
 }
+
 .profile-bio p {
     margin-bottom: 10px;
 }
@@ -211,12 +237,6 @@ nav {
     flex-direction: row;
     text-align: left;
     gap: 10px;
-}
-
-@media (max-width: 600px) {
-    .profile {
-        margin: 40px 16px;
-    }
 }
 
 .website-under-construction {
@@ -323,6 +343,48 @@ nav {
     box-shadow: 0 4px 20px rgb(0 0 0 / 0.2);
 }
 
+/* ==== MOBILE VERSION ==== */
+
+@media (max-width: 700px) {
+    .profile {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .portfolio-items > div {
+        width: 100%;
+    }
+
+    .main-content {
+        background-attachment: fixed;
+        background-size: contain;
+        background-image: url('pictures/alur-pic-logo-portrait.png');
+    }
+
+    .header {
+    }
+
+    .header-title img {
+        width: 130px;
+    }
+
+    .profile-text h1 {
+        font-size: 22px;
+    }
+
+    .lightbox button {
+        font-size: 40px;
+    }
+    .nav-links a {
+        padding: 8px 4px;
+    }
+
+}
+
 /* ==== COLLAGE ==== */
 
 .collage-banner {
@@ -421,6 +483,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    gap: 0px;
     margin: 0 0 20px 0;
 }
 
