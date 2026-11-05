@@ -1,4 +1,4 @@
-const photos = document.querySelectorAll('.jv74-collage img');
+const photos = document.querySelectorAll('.photo-collage img');
 const lightbox = document.querySelector('.lightbox');
 const bigImg = document.querySelector('.lightbox-img');
 let current = 0;
