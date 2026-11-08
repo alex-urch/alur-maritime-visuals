@@ -307,24 +307,25 @@ nav {
     border-radius: 8px;
 }
 
-.portfolio-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 0;
-}
+ .portfolio-items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 450px));
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin: 100px 0 0 0;
+  }
 
-.portfolio-items {
-    gap: 25px;
-    margin-top: 100px;
-}
+  .portfolio-items > div {
+      margin: 0px;
+      padding: 0 16px;
+  }
 
-.portfolio-items > div {
-    flex: 1 1 0;
-    max-width: 500px;
-    margin: 0px;
-    padding: 0 16px;
+
+.portfolio-items > div:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
 }
 
 .portfolio-items iframe,
@@ -335,7 +336,7 @@ nav {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 50px rgb(255 255 255 / 0.5);
+    box-shadow: 0 4px 50px rgb(255 255 255 / 0.7);
 }
 
 .oldyoutubelink {
@@ -353,12 +354,16 @@ nav {
     }
 
     .portfolio-items {
-        flex-direction: column;
-    }
+          grid-template-columns: minmax(0, 1fr);
+      }
 
     .portfolio-items > div {
         width: 100%;
     }
+    
+    .portfolio-items > div:last-child:nth-child(odd) {
+          width: 100%;
+      }
 
     .main-content {
         background-attachment: fixed;
@@ -425,7 +430,7 @@ nav {
 .collage-banner {
     display: block;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
     margin: 20px auto 0;
 }
